@@ -47,7 +47,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 
 // STEP 1 : STUDENT TO UPDATE - KEVAULT ENDPOINT URL
-$secret = new AzKeyVault\Secret('https://capstoneproject-kv.vault.azure.net/');
+$secret = new AzKeyVault\Secret('https://capstone-kv.vault.azure.net/');
 $secrets = $secret->getSecrets();
 
 // STEP 2: STUDENT TO MAKE SURE - PARAMETER NAME BELOW MATCHES WITH THE PARAMETER NAME PROVIDED IN KEYVAULT SETTINGS PAGE IN AZURE PORTAL
@@ -78,7 +78,6 @@ $sslcert    = 'ssl/DigiCertGlobalRootCA.crt.pem';
  * 
  */
 
- /* <**********  DELETE THIS LINE IF YOU WANT TO ENABLE THIS SECTION    ****** 
 
 # <?php
 
@@ -106,5 +105,3 @@ $sslcert    = 'ssl/DigiCertGlobalRootCA.crt.pem';
 #file_put_contents('testcertsb.pem', $testpemcontent);
 #$sslcert    = "testcertsb.pem";
 ?>
-
-**********  DELETE THIS LINE IF YOU WANT TO ENABLE THIS SECTION    ******   */   
