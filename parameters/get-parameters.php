@@ -92,10 +92,10 @@ $sslcert    = 'ssl/DigiCertGlobalRootCA.crt.pem';
 #$sslcert   = getenv('DB_SSLCERT');
 
 # LOCAL DECLARATION
-#$host       = 'SQLdbENDPOINT';
-#$username   = 'USERNAME';
-#$password   = 'PASSWORD';
-#$db_name    = 'DBNAME';
+#$host       = 'https://capstone-kv.vault.azure.net/';
+#$username   = 'triciagale';
+#$password   = 'Cloudcomputing_project';
+#$db_name    = 'capstone-db';
 #$sslcert    = 'ssl/DigiCertGlobalRootCA.crt.pem';
 
 # Test for local file creation
