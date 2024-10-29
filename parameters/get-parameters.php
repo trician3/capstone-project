@@ -84,12 +84,11 @@ $sslcert    = 'ssl/DigiCertGlobalRootCA.crt.pem';
 // Configuration for database connection
 
 # REMOTE DECLARATION
-$host       = getenv('DB_HOST');
-$username   = getenv('DB_USERNAME');
-$password   = getenv('DB_PASSWORD');
-$db_name     = getenv('DB_DATABASE');
+$host       = getenv('DB_HOST') ?: $host;   // Get value from environment variables or fallback to Key Vault secret
+$username   = getenv('DB_USERNAME') ?: $username;  // Get from env or Key Vault
+$password   = getenv('DB_PASSWORD') ?: $password;  // Get from env or Key Vault
+$db_name    = getenv('DB_DATABASE') ?: $db_name;   // Get from env or Key Vault
 $sslcert    = 'ssl/DigiCertGlobalRootCA.crt.pem';
-$sslcert   = getenv('DB_SSLCERT');
 
 # LOCAL DECLARATION
 #$host       = 'https://capstone-kv.vault.azure.net/';
